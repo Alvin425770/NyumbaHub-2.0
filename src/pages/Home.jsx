@@ -6,7 +6,7 @@ function Home() {
       <h1>NyumbaHub</h1>
       <p>Find home, without the run-around.</p>
 
-      <h2>Recently listed</h2>
+      <h2>Recently listed houses</h2>
       <ul>
         {listings.map((listing) => (
           <li key={listing.id}>
