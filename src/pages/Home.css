@@ -1,0 +1,55 @@
+.hero {
+  padding: 60px 24px;
+  text-align: center;
+  background: #F1ECE0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 500px;
+  margin: 0 auto 24px;
+  color: #444;
+}
+
+.hero button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  background: #14211C;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.how-it-works {
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.featured {
+  padding: 60px 24px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.featured-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+}
