@@ -38,11 +38,12 @@ function Home() {
         <h2>Recently listed</h2>
         <div className="featured-grid">
           {featured.map((listing) => (
-            <div className="featured-card" key={listing.id}>
-              <h4>{listing.title}</h4>
-              <p>{listing.location.area}, {listing.location.city}</p>
-              <p>KES {listing.rentAmount.toLocaleString()}/mo</p>
-            </div>
+             <div className="featured-card" key={listing.id}>
+                <div className="featured-card-image"></div>
+                <h4>{listing.title}</h4>
+                <p>{listing.location.area}, {listing.location.city}</p>
+                 <p>KES {listing.rentAmount.toLocaleString()}/mo</p>
+        </div>
           ))}
         </div>
       </section>
