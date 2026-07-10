@@ -1,23 +1,28 @@
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Listings from './pages/Listings';
-import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
-import BookingDetail from './pages/BookingDetail';
+import { AuthProvider } from "./context/AuthContext.jsx";
+import { Routes, Route } from "react-router-dom";
+import ProtectedRoute from "./ProtectedRoute";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Navbar from "./components/Navbar";
+import "./styles/auth.css";
+import './index.css'
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <AuthProvider>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/listings" element={<Listings />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/booking/:id" element={<BookingDetail />} />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        {/* Other routes — MJ's /listings, Mike's /booking, Alvin's / */}
       </Routes>
-    </>
+    </AuthProvider>
   );
 }
 
