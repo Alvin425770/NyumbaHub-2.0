@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { listings } from '../mock-data';
+import './ListingDetail.css';
 
 function ListingDetail() {
   const { id } = useParams();

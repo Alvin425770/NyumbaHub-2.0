@@ -1,0 +1,52 @@
+.listing-detail {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 24px 120px;
+}
+
+.listing-detail > a {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  margin-bottom: 32px;
+}
+
+.listing-detail h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 40px;
+  color: var(--on-surface);
+  margin-bottom: 16px;
+}
+
+.listing-detail p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--on-surface-variant);
+  margin-bottom: 8px;
+}
+
+.listing-detail__price {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--on-surface);
+}
+
+.listing-detail button {
+  margin-top: 32px;
+  padding: 16px 40px;
+  background: var(--tertiary);
+  color: var(--on-primary);
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
