@@ -6,16 +6,32 @@ function Home() {
 
   return (
     <div>
+      {/* HERO SECTION */}
       <section className="hero">
-        <h1>Find home, without the run-around.</h1>
-        <p>
-          No more paying deposits to landlords who ghost you. Every listing
-          is verified, and your rent stays held in escrow until you've
-          actually moved in.
-        </p>
-        <button>Browse houses</button>
+        <div className="hero-content">
+          <span className="hero-eyebrow">Verified Architectural Living</span>
+          <h1>Find home, without the run-around.</h1>
+          <p>
+            No more paying deposits to landlords who ghost you. Every listing
+            is verified, and your rent stays held in escrow until you've
+            actually moved in.
+          </p>
+          <div className="hero-search">
+            <input type="text" placeholder="Search neighborhoods..." />
+            <button>Browse Houses</button>
+          </div>
+        </div>
+
+        <div className="hero-image-wrap">
+          <div className="hero-image"></div>
+          <div className="hero-stat">
+            <span className="hero-stat-number">100%</span>
+            <span className="hero-stat-label">Verified Units</span>
+          </div>
+        </div>
       </section>
 
+      {/* HOW IT WORKS */}
       <section className="how-it-works">
         <h2>How it works</h2>
         <div className="how-it-works-grid">
@@ -34,16 +50,17 @@ function Home() {
         </div>
       </section>
 
+      {/* FEATURED LISTINGS */}
       <section className="featured">
         <h2>Recently listed</h2>
         <div className="featured-grid">
           {featured.map((listing) => (
-             <div className="featured-card" key={listing.id}>
-                <div className="featured-card-image"></div>
-                <h4>{listing.title}</h4>
-                <p>{listing.location.area}, {listing.location.city}</p>
-                 <p>KES {listing.rentAmount.toLocaleString()}/mo</p>
-        </div>
+            <div className="featured-card" key={listing.id}>
+              <div className="featured-card-image"></div>
+              <h4>{listing.title}</h4>
+              <p>{listing.location.area}, {listing.location.city}</p>
+              <p>KES {listing.rentAmount.toLocaleString()}/mo</p>
+            </div>
           ))}
         </div>
       </section>
