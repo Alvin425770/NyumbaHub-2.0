@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext.jsx';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import ProtectedRoute from './ProtectedRoute';
 import Home from './pages/Home';
 import Listings from './pages/Listings';
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path="/booking/:id" element={<BookingDetail />} />
       </Routes>
+      <Footer />
     </AuthProvider>
   );
 }
