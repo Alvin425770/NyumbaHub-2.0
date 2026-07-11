@@ -1,57 +1,62 @@
 .auth-page {
-  max-width: 700px;
-  margin: 60px auto;
-  padding: 64px;
-  border-radius: 12px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  color: var(--text);
+  max-width: 480px;
+  margin: 100px auto;
+  padding: 56px 48px;
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface-variant);
 }
 
 .auth-page h1 {
-  margin-bottom: 36px;
-  font-size: 38px;
+  margin-bottom: 32px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 36px;
   text-align: center;
-  color: var(--text-h);
+  color: var(--on-surface);
 }
 
 .auth-page form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .auth-page input,
 .auth-page select {
   width: 100%;
-  padding: 18px 20px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: 19px;
-  background: var(--code-bg);
-  color: var(--text-h);
+  padding: 16px 18px;
+  border: 1px solid var(--outline-variant);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  background: var(--background);
+  color: var(--on-surface);
 }
 
 .auth-page input::placeholder {
-  color: var(--text);
+  color: var(--on-surface-variant);
 }
 
 .auth-page input:focus,
 .auth-page select:focus {
   outline: none;
-  border-color: var(--accent-border);
+  border-color: var(--tertiary);
 }
 
 .auth-page button {
   width: 100%;
-  padding: 18px;
-  background: var(--accent);
-  color: #fff;
+  padding: 16px;
+  background: var(--primary);
+  color: var(--on-primary);
   border: none;
-  border-radius: 8px;
-  font-size: 19px;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 13px;
   font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -60,60 +65,70 @@
 }
 
 .auth-error {
-  color: #f87171;
-  font-size: 15px;
-  margin-bottom: 10px;
+  color: var(--error);
+  font-family: var(--font-body);
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 .auth-link {
   margin-top: 16px;
   text-align: center;
-  font-size: 15px;
-  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--on-surface-variant);
 }
 
 .auth-link span {
   cursor: pointer;
-  color: var(--accent);
+  color: var(--tertiary);
   font-weight: 600;
 }
 
 .dashboard {
   max-width: 800px;
-  margin: 50px auto;
-  padding: 32px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  color: var(--text);
+  margin: 60px auto;
+  padding: 40px;
+  background: var(--surface);
+  border: 1px solid var(--outline-variant);
+  border-radius: 8px;
+  color: var(--on-surface-variant);
 }
 
 .dashboard h2 {
   margin-bottom: 20px;
+  font-family: var(--font-display);
+  font-weight: 400;
   font-size: 28px;
-  color: var(--text-h);
+  color: var(--on-surface);
 }
 
 .dashboard h3 {
   margin-top: 28px;
   margin-bottom: 10px;
-  font-size: 21px;
-  color: var(--text-h);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--on-surface);
 }
 
 .dashboard p {
-  font-size: 16px;
-  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--on-surface-variant);
 }
 
 .dashboard .add-btn {
-  padding: 12px 20px;
-  background: var(--accent);
-  color: #fff;
+  padding: 12px 24px;
+  background: var(--tertiary);
+  color: var(--on-primary);
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 13px;
   font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
