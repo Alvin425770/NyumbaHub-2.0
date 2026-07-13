@@ -33,7 +33,8 @@ export default function Login() {
     setError("");
     try {
       register(form.name, form.email, form.password, form.role);
-      navigate("/dashboard");
+      setForm({ name: "", email: "", password: "", role: "tenant" });
+      setMode("login");
     } catch (err) {
       setError(err.message);
     }

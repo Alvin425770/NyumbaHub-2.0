@@ -30,7 +30,6 @@ export function AuthProvider({ children }) {
 
     const newUser = { id: Date.now().toString(), name, email, password, role };
     mockUsers.push(newUser);
-    setUser(newUser);
     return newUser;
   };
 
