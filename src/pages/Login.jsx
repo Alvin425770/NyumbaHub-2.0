@@ -15,18 +15,29 @@ export default function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
+    setError("");
     if (!loginEmail || !loginPassword) {
       setError("Both fields required");
       return;
     }
-    login(loginEmail, loginPassword);
-    navigate("/dashboard");
+    try {
+      login(loginEmail, loginPassword);
+      navigate("/dashboard");
+    } catch (err) {
+      setError(err.message);
+    }
   };
 
   const handleRegister = (e) => {
     e.preventDefault();
-    register(form.name, form.email, form.password, form.role);
-    navigate("/dashboard");
+    setError("");
+    try {
+      register(form.name, form.email, form.password, form.role);
+      setForm({ name: "", email: "", password: "", role: "tenant" });
+      setMode("login");
+    } catch (err) {
+      setError(err.message);
+    }
   };
 
   return (
