@@ -18,9 +18,32 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/listings" element={<Listings />} />
-        <Route path="/listings/:id" element={<ListingDetail />} />
         <Route path="/login" element={<Login />} />
+
+        <Route
+          path="/listings"
+          element={
+            <ProtectedRoute>
+              <Listings />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/listings/:id"
+          element={
+            <ProtectedRoute>
+              <ListingDetail />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/booking/:id"
+          element={
+            <ProtectedRoute>
+              <BookingDetail />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/dashboard"
           element={
@@ -29,7 +52,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="/booking/:id" element={<BookingDetail />} />
       </Routes>
       <Footer />
     </AuthProvider>
