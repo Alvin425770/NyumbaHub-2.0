@@ -7,10 +7,11 @@ export const listings = [
     bedrooms: 4,
     bathrooms: 2,
     images: [
-      'https://realtors.co.ke/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-10-at-4.18.40-PM-scaled-1.jpeg',
+      'https://i.roamcdn.net/prop/brk/gallery-full-1200w-watermark/EReBQjwVaxAdlsIni3I3LQ/-_1q4ZkIfdUXd_EZIUAqA8VgvNzSkEJrFipFgA/_1I6ruNDSwsLQwMTACAA/7549160c-558f-4448-9f2c-e601beb29eba.jpeg',
       'https://i.roamcdn.net/prop/brk/listing-thumb-400w/CuAwhzs-YVwJMp2fc7UXgg/-/_1I6ruNDSwsLQwMTAHAA/04756ec0-72cf-44fc-b955-e9161f596624.jpeg',
       'https://i.roamcdn.net/prop/brk/listing-thumb-400w/QBi70uIg2mrFREveO1o-6A/-/_1I6ruNDSwsLQwMTAGAA/3922f32b-c6b9-44c5-b469-e1660cb18f73.jpeg',
       'https://i.roamcdn.net/prop/brk/gallery-thumb-140w/j2vzSKQm2Ku_bwXYz85SfQ/-/_1I6ruNDSwsLQwMTQDAA/3506ef3f-113c-4761-9d24-deb23b053451.jpeg',
+      'https://i.roamcdn.net/prop/brk/gallery-thumb-140w/HM34o26mjcWsW3j7RItghg/-/_1I6ruNDSwsLQwMbAEAA/9467b8cc-a770-4c9e-868a-cb47067b9ae5.jpeg',
     ],
     description: 'Bright, modern 4-bedroom apartment close to Yaya Centre, with backup water and secure parking.',
   },

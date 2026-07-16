@@ -60,7 +60,11 @@ function Home() {
         <div className="featured-grid">
           {featured.map((listing) => (
             <div className="featured-card" key={listing.id}>
-              <div className="featured-card-image"></div>
+              <img
+                src={listing.images[0]}
+                alt={listing.title}
+                className="featured-card-image"
+              />
               <h4>{listing.title}</h4>
               <p>{listing.location.area}, {listing.location.city}</p>
               <p>KES {listing.rentAmount.toLocaleString()}/mo</p>
