@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
+import './ListingCard.css';
 
 function ListingCard({ listing }) {
   return (
     <div className="listing-card">
-       <img src={listing.images[0]} alt={listing.title} className="listing-card__image" />
+      <img
+        src={listing.images[0]}
+        alt={listing.title}
+        className="listing-card-image"
+      />
       <h3>{listing.title}</h3>
       <p className="listing-card__location">
         {listing.location.area}, {listing.location.city}

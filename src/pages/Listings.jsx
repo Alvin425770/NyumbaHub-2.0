@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { listings } from '../mock-data';
 import ListingCard from '../components/ListingCard';
 import SearchBar from '../components/SearchBar';
+import './Listings.css';
 
 function Listings() {
   const [filters, setFilters] = useState({ query: '', maxPrice: null });
