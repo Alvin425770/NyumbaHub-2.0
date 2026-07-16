@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 function ListingCard({ listing }) {
   return (
     <div className="listing-card">
+       <img src={listing.images[0]} alt={listing.title} className="listing-card__image" />
       <h3>{listing.title}</h3>
       <p className="listing-card__location">
         {listing.location.area}, {listing.location.city}

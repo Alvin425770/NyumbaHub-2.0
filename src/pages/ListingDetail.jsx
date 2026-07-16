@@ -18,11 +18,22 @@ function ListingDetail() {
     <div className="listing-detail">
       <Link to="/listings">← Back to listings</Link>
       <h1>{listing.title}</h1>
+      <div className="listing-detail__images">
+        {listing.images.map((img, i) => (
+          <img
+            key={i}
+            src={img}
+            alt={`${listing.title} ${i + 1}`}
+            className="listing-detail__image"
+          />
+        ))}
+      </div>
       <p className="listing-detail__price">
         KES {listing.rentAmount.toLocaleString()} / month
       </p>
       <p>{listing.location.area}, {listing.location.city}</p>
       <p>{listing.bedrooms} bed · {listing.bathrooms} bath</p>
+      <p>{listing.description}</p>
       <button>Request to Book</button>
     </div>
   );
