@@ -47,7 +47,10 @@
 
 .listing-card-image {
   aspect-ratio: 4 / 5;
-  background: var(--secondary);
+  width: 100%;
+  object-fit: cover;
+  display: block;
   border-radius: 4px;
   margin-bottom: 16px;
+  background: var(--secondary);
 }

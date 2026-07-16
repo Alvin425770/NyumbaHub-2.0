@@ -182,3 +182,18 @@
     border-right-color: var(--border);
   }
 }
+
+.listing-detail__images {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+.listing-detail__image {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
