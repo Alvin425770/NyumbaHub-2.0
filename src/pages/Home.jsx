@@ -23,7 +23,11 @@ function Home() {
         </div>
 
         <div className="hero-image-wrap">
-          <div className="hero-image"></div>
+          <img
+            className="hero-image"
+            src="https://images.pexels.com/photos/36466231/pexels-photo-36466231.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Modern villas surrounded by greenery"
+          />
           <div className="hero-stat">
             <span className="hero-stat-number">100%</span>
             <span className="hero-stat-label">Verified Units</span>

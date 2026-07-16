@@ -78,7 +78,8 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   border-radius: 8px;
-  background: var(--secondary);
+  object-fit: cover;
+  display: block;
 }
 
 .hero-stat {
